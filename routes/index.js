@@ -16,7 +16,7 @@ const PORT = process.env.PORT
 console.log(`Env variables: ${USERNAME}, ${PASS}, ${PORT}`)
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('index', { 
     title: 'Express', 
     hardcoding: `${USERNAME1},${PASS1},${PORT1}`,

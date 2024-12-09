@@ -3,7 +3,7 @@ const router = express.Router();
 const exec = require('child_process').exec;
 
 /* GET history page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   console.log(req.query)
   const file = req.query.file
 
