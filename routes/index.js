@@ -17,10 +17,11 @@ console.log(`Env variables: ${USERNAME}, ${PASS}, ${PORT}`)
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', hardcoding: `${USERNAME1},${PASS1},${PORT1}`,
-  envVariables: `${USERNAME},${PASS},${PORT}` });
+  res.render('index', { 
+    title: 'Express', 
+    hardcoding: `${USERNAME1},${PASS1},${PORT1}`,
+    envVariables: `${USERNAME},${PASS},${PORT}` 
+  });
 });
-
-/* GET history page */
 
 module.exports = router;
