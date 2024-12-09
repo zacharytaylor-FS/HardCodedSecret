@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
   console.log(file)
 
-  const command = `stat ${file}`;
+  const command = `git log --oneline ${file}`;
 
   exec(command, (err, output) => {
     if(err) {
